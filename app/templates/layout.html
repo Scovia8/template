@@ -1,0 +1,893 @@
+ {% load static %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Bootslander Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css' %}">
+
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+
+</head>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"> Family-Friendly Mountain Lodge</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#team">Food</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="{% static 'assets/img/location.jpg' %}" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="{% static 'assets/img/nav.jpg' %}" class="img-fluid animated" alt="Family-Friendly Mountain Lodge">
+          </div>
+
+          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1>Welcome to <span> Family-Friendly Mountain Lodge </h1>
+            <p>Escape to the serene beauty of Mountain Peak Lodge, a cozy, family-friendly retreat surrounded by majestic mountains and lush forests. Perfect for nature lovers and adventurers, our lodge offers easy access to hiking trails, scenic overlooks, and a variety of outdoor activities. After a day of exploring, relax by the fireplace in our rustic-chic rooms or enjoy a delicious meal at our on-site restaurant, specializing in hearty, local cuisine. At Mountain Peak Lodge, you’ll find everything you need for a memorable mountain getaway."</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Begin with us</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>About Us</h3>
+            <h2>Mountain Peak Lodge, you’ll find everything you need for a memorable mountain getaway."</h2>
+
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+           <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i>
+                    <h3>Our rooms</h3>
+                     <p>Ultra Mordern, client tailored and full service access and Tailorship. Cuts across all nitches of needs </p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-command"></i>
+                  <h3>Our Conferences</h3>
+                  <p>State of the art, World Class conference halls. Can be customised to your unique tastes and preferences.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3>Services</h3>
+                  <p>Fivestar standards of global services. Client Centricity</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+          <h3>Services</h3>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="" style="color: #ffbb2c;"></i>
+              <h3><a href="" class="stretched-link">Room service</a></h3>
+                <p>In-room dining available 24/7, offering a variety of meals, snacks, and beverages.
+Options for breakfast in bed, romantic dinners, or late-night cravings.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="" style="color: #5578ff;"></i>
+              <h3><a href="" class="stretched-link">Housekeeping services</a></h3>
+                <p>Daily cleaning, linen changes, and turndown services.
+Laundry and dry cleaning services for guests’ clothing, with same-day options.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4"data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="" class="stretched-link">Business center</a></h3>
+                <p>Meeting rooms, conference halls, and a business lounge with Wi-Fi and office supplies.
+Fax, photocopying, and printing services for business travelers.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="" style="color: #e361ff;"></i>
+              <h3><a href="" class="stretched-link">Dining options</a></h3>
+                <p>On-site restaurants with various cuisines, from fine dining to casual options.
+Coffee shop or lounge for quick bites and beverages.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="features-item">
+              <i class="" style="color: #47aeff;"></i>
+              <h3><a href="" class="stretched-link">Event and banquet services</a></h3>
+                <p>Banquet halls and event spaces for weddings, parties, and corporate events.
+Full catering services, audiovisual equipment, and event planning assistance.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="features-item">
+              <i class="r" style="color: #ffa76e;"></i>
+              <h3><a href="" class="stretched-link">Kid's club and baby sitting services </a></h3>
+                <p>Supervised kids’ club with games, crafts, and activities.
+Babysitting services for parents wanting a night out.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="features-item">
+              <i class="" style="color: #11dbcf;"></i>
+              <h3><a href="" class="stretched-link"> Special Requests and Customization</a></h3>
+                     <p>Personalized services like room decoration for celebrations or surprise events.
+Options for dietary preferences, special room setups, or unique guest requests.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="features-item">
+              <i class="" style="color: #4233ff;"></i>
+              <h3><a href="" class="stretched-link">Complimentary Breakfast or Happy Hour</a></h3>
+                <p>Buffet breakfast or continental breakfast included in room rates.
+Evening happy hour with drinks and light snacks for guests.</p>
+            </div>
+          </div><!-- End Feature Item -->
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Details Section -->
+    <section id="details" class="details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Details</h2>
+        <div><span>Check Our</span> <span class="description-title">Details</span></div>
+      </div>
+
+        <!-- End Section Title -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'assets/img/location.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Location</h3>
+            <p class="fst-italic">789 Alpine Way, Green Valley, Mountain State
+               Nestled in the heart of Mountain State's Green Valley, Family-Friendly Mountain Lodge offers stunning views of the surrounding peaks, with easy access to trails, waterfalls, and cozy village shops. The perfect retreat for families, nature lovers, and adventure seekers alike.
+
+            </p>
+          </div>
+        </div>
+
+        <!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+            <img src="{% static 'assets/img/location3.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>Accommodation Options</h3>
+            <p></p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Standard Room.</span>
+              <p>Warm, inviting room with a queen bed, mountain view, and all essential amenities.
+                 </p><p>Price: $120 per night</p></li>
+              <li><i class="bi bi-check"></i><span>Family Suite.</span>
+              <p>Spacious suite with a king bed, bunk beds for kids, and a separate sitting area.
+                 </p> <p>Price: $180 per night.</p></li>
+              <li><i class="bi bi-check"></i> <span>Deluxe Mountain View Cabin</span>
+                  <p>Private cabin with two bedrooms, fireplace, kitchenette, and panoramic mountain views.</p>
+                     <p>Price: $250 per night.</p>
+                      <li><i class="bi bi-check"></i> <span>Grand Family Cabin</span>
+                  <p>Exclusive, large cabin with three bedrooms, full kitchen, living room, and private deck.</p>
+                    <p>Price: $400 per night</p>.
+</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <img src="{% static 'assets/img/location4.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Overview</h3>
+            <p class="fst-italic">
+              Welcome to Family-Friendly Mountain Lodge, your home in the mountains, where comfort and adventure await. Surrounded by lush forests and majestic mountains, our lodge provides a cozy and relaxing atmosphere for families and guests of all ages. With thoughtful amenities, family-oriented activities, and a warm, rustic charm, this lodge is the perfect base for both relaxation and outdoor exploration.
+            </p>
+
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Details Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <div><span>Check Our</span> <span class="description-title">Gallery</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal1.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal1.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal2.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal2.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal3.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal3.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal4.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal4.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal5.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal5.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal6.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal6.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal7.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal7.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gal8.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gal8.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background" >
+
+      <img src="{% static 'assets/img/counter.jpg' %}" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Our mission is simple: to give every guest an unforgettable experience, where each moment spent with us is a cherished memory. We’re committed to providing exceptional service and a warm, welcoming environment that reflects the natural beauty and spirit of the mountains. We look forward to welcoming you and making your stay truly remarkable.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Mike Wilsson</h3>
+                <h4>General Manager</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Our team is dedicated to providing personalized service, whether it’s through organizing family-friendly activities, offering guidance on local trails, or simply making sure your room is prepared to the highest standards. We aim to exceed expectations at every turn and to make sure that each guest leaves with lasting memories of their time with us.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test3.jpg' %}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                  <h4>Head of Food and Beverage Staff</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>We’re especially proud of our family-friendly menus, which cater to all ages and dietary needs, ensuring that everyone can enjoy delicious, nourishing meals. Whether you’re visiting our Rustic Pines Restaurant, stopping by the Fireside Café for a quick bite, or enjoying one of our weekend barbecues, we’re here to make each dining moment special.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test4.jpg' %}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Events and Activities Coordinator</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Our lodge is not only a place to stay but a place to create memories. Whether you’re celebrating a special occasion or simply looking for quality time with loved ones, I’m here to ensure your experience is everything you envision—and more. My team and I look forward to welcoming you to Family-Friendly Mountain Lodge, where adventure and relaxation come together in perfect harmony.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/test5.jpg' %}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Head of Housekeeping and Management Staff</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>We understand that a welcoming atmosphere is essential for creating a memorable stay, so we go above and beyond to make sure each guest feels cared for, whether it’s through daily room refreshes, special requests, or creating cozy touches throughout the lodge. We want you to focus on enjoying time with loved ones and taking in the beauty of the mountains, knowing that your comfort is our top priority.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <div><span>Check Our</span> <span class="description-title">Team</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="{% static 'assets/img/team/team3.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <div><span>Check Our</span> <span class="description-title">Pricing</span></div>
+           <div><span>No credit card required</span> </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <p class="description">Our Free Plan offers the perfect starting point for your stay, giving you access to basic but essential services to enjoy your time here. Whether you're looking for a quick getaway or just a place to unwind, our Free Plan ensures that you can explore the beauty of the mountains without any</p>
+              <h4 class="text-center small">What's Included:</h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Complimentary Wi-Fi in public areas</span></li>
+                <li><i class="bi bi-check"></i> <span>Access to our outdoor seating areas and garden</span></li>
+                <li><i class="bi bi-check"></i> <span>Daily access to our scenic trails</span></li>
+                <li><i class="bi bi-check"></i> <span>Free parking on-site</span></li>
+                <li><i class="bi bi-check"></i> <span>Use of our kids’ play area</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Business Plan</h3>
+              <p class="description">For guests who need more flexibility and premium services, our Business Plan offers a tailored experience designed for professionals and corporate travelers. Whether you're here for a meeting, conference, or a working vacation, our Business Plan provides everything you need to stay productive and relaxed during your time at Family-Friendly Mountain Lodge.</p>
+             <h4 class="text-center small">What's Included:</h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Fast and reliable high-speed Wi-Fi throughout the lodge and in your room</span></li>
+                <li><i class="bi bi-check"></i> <span>Access to our fully equipped Business Center (printing, faxing, and meeting rooms)</span></li>
+                <li><i class="bi bi-check"></i> <span>Daily breakfast with a variety of fresh and healthy options</span></li>
+                <li><i class="bi bi-check"></i> <span>Priority booking for outdoor activities and adventures</span></li>
+                <li><i class="bi bi-check"></i> <span>Complimentary shuttle service to nearby business districts and meeting venues</span></li>
+                <li><i class="bi bi-check"></i> <span>10% discount at our Rustic Pines Restaurant</span></li>
+                <li><i class="bi bi-check"></i> <span>Access to our private meeting rooms and event spaces (with discounted rates)
+                  </span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <p class="description">Our Developer Plan is designed for tech-savvy guests and digital nomads who need a fully-equipped environment to stay productive while exploring the beauty of the mountains. Whether you're coding, creating, or innovating, this plan provides the advanced tools and services to help you thrive during your stay at Family-Friendly Mountain Lodge.</p>
+                 <h4 class="text-center small">What's Included:</h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>High-speed, dedicated Wi-Fi for seamless video calls, streaming, and large file uploads</span></li>
+                <li><i class="bi bi-check"></i> <span>Access to our Tech Hub with workstations, comfortable seating, and power outlets</span></li>
+                <li><i class="bi bi-check"></i> <span>24/7 access to a quiet and private co-working space</span></li>
+                <li><i class="bi bi-check"></i> <span>Complimentary laptop and device charging stations throughout the lodge</span></li>
+                <li><i class="bi bi-check"></i> <span>Priority tech support for any device or connectivity issues</span></li>
+                <li><i class="bi bi-check"></i> <span>Access to meeting rooms and brainstorming spaces (with priority booking)</span></li>
+                <li><i class="bi bi-check"></i> <span>Complimentary printing, scanning, and faxing services</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3> What time is check-in and check-out?</h3>
+                <div class="faq-content">
+                  <p>Early check-in or late check-out may be available upon request and subject to availability. Please contact the front desk to inquire.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>. Is the lodge pet-friendly?</h3>
+                <div class="faq-content">
+                  <p>Yes, we welcome pets! We offer designated pet-friendly rooms and cabins, and there are pet amenities available upon request. A small cleaning fee applies. Please notify us in advance if you're bringing a pet.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Do you offer spa services?</h3>
+                <div class="faq-content">
+                  <p>Yes! Our spa offers a range of treatments including massages, facials, and body therapies. You can book treatments in advance or while at the lodge.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="{% static 'assets/img/faq.jpg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <div><span>Check Our</span> <span class="description-title">Contact</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>123 Mountain View Road, Pine Ridge, Alpine County, Alpine, KN576588 Kenya</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+254 7589 55488 </p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@familyfriendly.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                    <br><br><br><br><br>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="/" class="logo d-flex align-items-center">
+            <span class="sitename">Familyfriendly</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>123 Mountain View Road</p>
+            <p> Alpine County, Alpine, KN576588</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254 7589 55488</span></p>
+            <p><strong>Email:</strong> <span>info@familyfriend.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Room Service</a></li>
+            <li><a href="#">Housekeeping services</a></li>
+            <li><a href="#">Business center</a></li>
+            <li><a href="#">Dining</a></li>
+              <li><a href="#">Event and banquet services</a></li>
+              <li><a href="#">Kid's club and baby sitting services</a></li>
+              <li><a href="#">Special request and Customization</a></li>
+              <li><a href="#">Complimentary Breakfast or Happy Hour</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Familyfriendly</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
